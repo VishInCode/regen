@@ -153,7 +153,7 @@ export default function AnalyzeLand() {
         {facilityMix.slice(0, 6).map((f) => {
           const Icon = facilityIcon[f.category] ?? MapPin;
           return (
-            <Card key={f.category} className="p-4">
+            <Card key={f.key} className="p-4">
               <Icon className="h-5 w-5 text-terra" strokeWidth={1.75} />
               <p className="mt-2 font-serif text-2xl font-semibold text-ink">
                 {f.count}
